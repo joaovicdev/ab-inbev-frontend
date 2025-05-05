@@ -1,16 +1,17 @@
 # 🧠 Users API - NextJS - React Query
 
-
 ## Pré-requisitos
 
 - Node v22+
 - Npm
+- Estar com o backend rodando (porta 3001)
 
 ---
 
 ## Comandos
 
 ```bash
+cp .env.example .env
 npm install
 npm run dev
 ```
