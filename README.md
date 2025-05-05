@@ -1,5 +1,7 @@
 # 🧠 Users API - NextJS - React Query
 
+Projeto para avaliação AB-InBev (frontend)
+
 ## Pré-requisitos
 
 - Node v22+
