@@ -18,7 +18,7 @@ type UserFormData = z.infer<typeof userSchema>;
 export default function Page() {
   const { id } = useParams<{ id: string }>();
   const router = useRouter();
-  const { isLoading, error } = useUser(id);
+  const { isLoading, error, data } = useUser(id);
   const updateUser = useUpdateUser(id);
 
   const {
@@ -47,6 +47,7 @@ export default function Page() {
           <label className="block font-medium">Nome</label>
           <input
             type="text"
+            value={data.name}
             data-testid="name"
             {...register('name')}
             className="w-full px-3 py-2 border rounded"
@@ -59,6 +60,7 @@ export default function Page() {
           <label className="block font-medium">Email</label>
           <input
             type="email"
+            value={data.email}
             data-testid="email"
             {...register('email')}
             className="w-full px-3 py-2 border rounded"
